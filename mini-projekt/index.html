@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo WebApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Meine ToDo-Liste</h1>
+        
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Neue Aufgabe eingeben..." />
+            <button onclick="addTask()">Hinzufügen</button>
+        </div>
+        
+        <ul id="taskList">
+            <!-- Hier werden die Aufgaben angezeigt -->
+        </ul>
+        
+        <div class="stats">
+            <p>Offene Aufgaben: <span id="taskCount">0</span></p>
+            <button onclick="resetTasks()">Alle löschen</button>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
